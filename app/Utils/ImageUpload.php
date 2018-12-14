@@ -53,6 +53,6 @@ class ImageUpload{
         return $fi.'.'.$extension;
     }
     private function getUploadDirectory(){
-        return '/Users/Sites/nvwa/storage/uploads/thumb/';
+        return env('UPLOAD_PATH');
     }
 }
