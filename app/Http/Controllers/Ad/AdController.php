@@ -57,8 +57,9 @@ class AdController extends Controller
         $advertisement->url = $request->input('url');
         $advertisement->start = $request->input('start');
         $advertisement->end = $request->input('end');
-        $advertisement->comment = $request->input('desc');
+        $advertisement->desc = $request->input('desc');
         $advertisement->status = $request->input('status');
+        $advertisement->position_id = $request->input('position_id');
         if($request->input('image')){
             $picResult = $this->upload($request);
             $advertisement->photo =  $picResult['imgurl'];
