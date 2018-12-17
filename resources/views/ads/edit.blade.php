@@ -48,7 +48,7 @@
                                         <div class="image_upload"></div>
                                         @if($advertisement->photo)
                                             <div class="img_span">
-                                                <img class="img" src="{{env('IMG_URL').'/'.$advertisement->photo}}" style="width:80px;height:80px;margin-left:8px;"><span onclick="delImgUrl(this);" class="image_icon"></span>
+                                                <img class="img" src="{{env('IMG_URL').'/images/uploads/thumb/'.$advertisement->photo}}" style="width:80px;height:80px;margin-left:8px;"><span onclick="delImgUrl(this);" class="image_icon"></span>
                                             </div>
                                         @endif
                                     </td>
