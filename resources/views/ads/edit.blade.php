@@ -9,7 +9,7 @@
             <div class="row">
                 <div class='col-md-12'>
                     <div class="table-responsive">
-                        <form class="form-inline" method="post" enctype="multipart/form-data" action="/ad/postCreate">
+                        <form class="form-inline" method="post" enctype="multipart/form-data" action="/ad/postEdit">
                             {{csrf_field()}}
                             <input type="hidden" value="{{$advertisement->id}}" />
                             <table class="table table-condensed table-add">
