@@ -87,10 +87,10 @@
                                     <td>
                                         <div class="form-group">
                                             <label class="radio-inline">
-                                                <input type="radio" name="status" id="inlineRadio1" {{$advertisement->status==3?'checked':''}} value="1"> 开启
+                                                <input type="radio" name="status" id="inlineRadio1" {{$advertisement->status==1?'checked':''}} value="1"> 开启
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="radio" name="status" id="inlineRadio2" {{$advertisement->status==1?'checked':''}} value="2"> 关闭
+                                                <input type="radio" name="status" id="inlineRadio2" {{$advertisement->status==0?'checked':''}} value="0"> 关闭
                                             </label>
                                         </div>
                                     </td>
