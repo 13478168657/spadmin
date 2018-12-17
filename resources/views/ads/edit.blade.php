@@ -11,7 +11,7 @@
                     <div class="table-responsive">
                         <form class="form-inline" method="post" enctype="multipart/form-data" action="/ad/postEdit">
                             {{csrf_field()}}
-                            <input type="hidden" value="{{$advertisement->id}}" />
+                            <input type="hidden" name="id" value="{{$advertisement->id}}" />
                             <table class="table table-condensed table-add">
                                 <tr>
                                     <th style="width:10%;">
